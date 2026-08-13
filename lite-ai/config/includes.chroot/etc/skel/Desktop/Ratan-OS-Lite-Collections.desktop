@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ratan OS Lite Tool Collections
+Comment=View authorized security tool collections
+Exec=xfce4-terminal --command ratan-collections
+Icon=utilities-terminal
+Terminal=false
+Categories=System;Security;

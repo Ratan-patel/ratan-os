@@ -1,0 +1,17 @@
+# Downloaded AI build inputs and generated live-build state
+.vendor/
+artifacts/
+binary/
+cache/
+chroot/
+local/
+.build/
+*.iso
+*.zsync.xz
+binary.*
+chroot.*
+wget-log*
+
+# AI assets are downloaded reproducibly by fetch-ai-assets.sh.
+config/includes.chroot/usr/local/lib/ratan-ai/
+config/includes.chroot/usr/local/share/ratan-ai/models/

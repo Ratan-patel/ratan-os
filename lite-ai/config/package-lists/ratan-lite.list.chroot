@@ -1,0 +1,63 @@
+# Minimal live desktop and connectivity.
+xfce4
+xfce4-terminal
+lightdm
+network-manager
+network-manager-gnome
+polkitd
+pkexec
+sudo
+firefox-esr
+mousepad
+
+# ISO hybridization support required by live-build.
+syslinux-utils
+
+# Essential operator utilities.
+# Explicit runtime dependencies for the bundled llama.cpp CPU server.
+libgomp1
+libstdc++6
+
+git
+curl
+wget
+ca-certificates
+jq
+ripgrep
+tmux
+htop
+lsof
+file
+iproute2
+
+# Collection: Network & Discovery.
+nmap
+arp-scan
+traceroute
+
+# Collection: Web Assessment — approved targets and agreed rate limits only.
+sqlmap
+ffuf
+gobuster
+
+# Collection: Traffic Analysis.
+tcpdump
+tshark
+mtr-tiny
+
+# Collection: TLS & Service Review.
+sslscan
+whatweb
+
+# Collection: Host Audit.
+lynis
+debsecan
+ufw
+
+# Collection: Triage.
+rkhunter
+chkrootkit
+
+# Minimal scripting/runtime support for included utilities.
+python3
+python3-requests

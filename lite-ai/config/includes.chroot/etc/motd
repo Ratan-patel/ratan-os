@@ -1,0 +1,9 @@
+Ratan OS Lite AI Edition — Authorized Security Live
+
+Run `ratan-ai` to start the offline Qwen3-4B assistant at localhost:8080.
+Run `ratan-ai cli` for a terminal chat, or `ratan-collections` to view approved tools.
+For usable local AI performance, 8 GB RAM or more is recommended.
+
+Use only on systems and networks covered by explicit written authorization.
+No DDoS, credential attacks, phishing, malware, persistence, data exfiltration
+or destructive activity is included or permitted.

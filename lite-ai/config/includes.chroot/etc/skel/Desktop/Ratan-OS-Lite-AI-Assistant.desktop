@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Ratan AI Assistant (Offline)
+Comment=Start the local Qwen3-4B assistant on this device
+Exec=xfce4-terminal --command ratan-ai
+Icon=utilities-terminal
+Terminal=false
+Categories=Utility;Education;
+StartupNotify=true

@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+cat <<'EOF'
+RATAN OS LITE — AUTHORIZED SECURITY TOOL COLLECTIONS
+
+[ Network & Discovery ]
+  nmap       Approved host and service mapping
+  arp-scan   Local network asset discovery
+  traceroute Permitted route diagnostics
+
+[ Web Assessment ]
+  sqlmap     Scoped validation only; no data extraction or shell/file actions
+  ffuf       Rate-limited endpoint and parameter discovery
+  gobuster   Approved content and directory discovery
+
+[ Traffic Analysis ]
+  tcpdump    Packet capture on approved interfaces
+  tshark     Command-line protocol analysis
+  mtr        Route and loss diagnostics
+
+[ TLS & Service Review ]
+  sslscan    TLS configuration review
+  whatweb    Web technology identification
+  nmap       Default service checks on approved targets
+
+[ Host Audit ]
+  lynis      Local hardening audit
+  debsecan   Package exposure review
+  ufw        Local firewall management
+
+[ Triage ]
+  rkhunter   Local rootkit indicator review
+  chkrootkit Local anomaly review
+  lsof       Process and socket inspection
+
+BOUNDARY: Use only with explicit written authorization, agreed scope,
+rate limits and stop conditions. No DDoS, credential attacks, phishing,
+malware, stealth/persistence, data exfiltration or destructive tooling.
+EOF

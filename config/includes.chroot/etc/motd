@@ -1,0 +1,17 @@
+Ratan OS — Authorized Security Live
+
+Use this image only on systems and networks for which you have explicit written authorization.
+This build includes controlled web-assessment tools (SQLMap, Gobuster and FFUF)
+only for the written scope, approved targets, and agreed request rate in your engagement.
+It intentionally omits DDoS/load-generation, credential attacks, phishing, stealth,
+persistence, destructive tooling, and data-exfiltration workflows.
+
+Useful first steps:
+  sentinel-audit ~/audit.txt     Local defensive baseline report
+  wireshark                     Packet analysis
+  nmap                          Authorized service discovery
+  sqlmap / gobuster / ffuf      Authorized web assessment (scope and rate limits first)
+  lynis audit system            Host hardening review
+  ufw enable                    Enable the uncomplicated firewall
+
+Keep evidence and reports inside the approved case directory.

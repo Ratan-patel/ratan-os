@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+OUT="${1:-$HOME/sentinel-audit-$(date -u +%Y%m%dT%H%M%SZ).txt}"
+mkdir -p "$(dirname "$OUT")"
+{
+  echo "SentinelOS local defensive audit"
+  echo "Generated (UTC): $(date -u --iso-8601=seconds)"
+  echo
+  echo "== Host =="
+  hostnamectl 2>/dev/null || true
+  uname -a
+  echo
+  echo "== Listening sockets =="
+  ss -tulpen 2>/dev/null || true
+  echo
+  echo "== Firewall =="
+  sudo nft list ruleset 2>/dev/null || true
+  sudo ufw status verbose 2>/dev/null || true
+  echo
+  echo "== Failed logins (if available) =="
+  sudo journalctl -p warning -b --no-pager 2>/dev/null | tail -n 100 || true
+  echo
+  echo "== Filesystem =="
+  df -hT
+  echo
+  echo "== Package updates =="
+  apt list --upgradable 2>/dev/null || true
+} | tee "$OUT"
+
+echo "Audit report saved to: $OUT"

@@ -1,0 +1,90 @@
+# Desktop/runtime — recommends disabled to protect the 2 GB target.
+xfce4
+xfce4-terminal
+lightdm
+network-manager
+network-manager-gnome
+network-manager-openvpn
+polkitd
+pkexec
+sudo
+firefox-esr
+mousepad
+thunar-archive-plugin
+
+# ISO hybridization utility required inside the live-build chroot.
+syslinux-utils
+
+# Core defensive operations and forensics.
+git
+curl
+wget
+ca-certificates
+jq
+ripgrep
+fd-find
+tmux
+htop
+btop
+strace
+lsof
+psmisc
+file
+binutils
+pciutils
+usbutils
+ethtool
+smartmontools
+lm-sensors
+openssh-client
+openssh-server
+rsync
+
+# Network visibility and packet analysis.
+nmap
+tcpdump
+wireshark-common
+tshark
+mtr-tiny
+traceroute
+iproute2
+socat
+netcat-openbsd
+arp-scan
+
+# Authorized web/API assessment — written scope aur agreed rate limits ke andar hi.
+# No credential attacks, data extraction, destructive payloads or DDoS tooling.
+whatweb
+sslscan
+sqlmap
+gobuster
+ffuf
+python3
+python3-pip
+python3-venv
+python3-requests
+python3-bs4
+python3-yaml
+shellcheck
+bandit
+
+# System auditing, vulnerability assessment and remediation.
+lynis
+rkhunter
+chkrootkit
+clamav
+clamav-freshclam
+nftables
+apparmor
+apparmor-utils
+ufw
+fail2ban
+unattended-upgrades
+debsecan
+usbguard
+
+# Documentation/reporting.
+libreoffice-writer
+pandoc
+imagemagick
+sqlite3
